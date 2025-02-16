@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    
+    <header class="bg-gray-800 py-6 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-3xl font-bold text-blue-400">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+        <h2 class="text-5xl font-bold text-blue-400">Hello, I'm Hitesh Chaudhary</h2>
+        <p class="text-lg mt-4">A Full Stack Web Developer passionate about building creative and scalable web applications.</p>
+        <a href="#projects" class="mt-6 bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg">View My Work</a>
+    </section>
+
+    <section id="about" class="container mx-auto py-20 px-6 text-center">
+        <h2 class="text-4xl font-bold text-blue-400 mb-6">About Me</h2>
+        <p class="text-lg">I'm a passionate developer with experience in front-end and back-end technologies. I specialize in creating high-quality and efficient web applications.</p>
+    </section>
+
+    <section id="skills" class="bg-gray-800 py-20 px-6 text-center">
+        <h2 class="text-4xl font-bold text-blue-400 mb-6">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <span class="bg-blue-500 text-white py-2 px-6 rounded-lg">HTML</span>
+            <span class="bg-blue-500 text-white py-2 px-6 rounded-lg">CSS</span>
+            <span class="bg-blue-500 text-white py-2 px-6 rounded-lg">JavaScript</span>
+            <span class="bg-blue-500 text-white py-2 px-6 rounded-lg">Tailwind CSS</span>
+            <span class="bg-blue-500 text-white py-2 px-6 rounded-lg">React.js</span>
+            <span class="bg-blue-500 text-white py-2 px-6 rounded-lg">Node.js</span>
+            <span class="bg-blue-500 text-white py-2 px-6 rounded-lg">MongoDB</span>
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto py-20 px-6">
+        <h2 class="text-4xl font-bold text-blue-400 text-center mb-6">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="project1.jpg" alt="Project 1" class="w-full rounded-lg">
+                <h3 class="text-2xl font-bold mt-4">Weather App</h3>
+                <p class="text-lg">A web app providing real-time weather updates using OpenWeather API.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="project2.jpg" alt="Project 2" class="w-full rounded-lg">
+                <h3 class="text-2xl font-bold mt-4">Task Manager</h3>
+                <p class="text-lg">A task management tool to organize daily tasks with drag-and-drop functionality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-800 py-20 px-6 text-center">
+        <h2 class="text-4xl font-bold text-blue-400 mb-6">Contact Me</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="max-w-lg mx-auto bg-gray-900 shadow-md rounded-lg p-6">
+            <div class="mb-4">
+                <label class="block text-lg font-bold">Name</label>
+                <input type="text" name="name" class="w-full p-2 border rounded-lg bg-gray-700 text-white" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-lg font-bold">Email</label>
+                <input type="email" name="_replyto" class="w-full p-2 border rounded-lg bg-gray-700 text-white" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-lg font-bold">Message</label>
+                <textarea name="message" rows="4" class="w-full p-2 border rounded-lg bg-gray-700 text-white" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded-lg w-full">Send</button>
+        </form>
+    </section>
+
+    <footer class="bg-gray-900 py-6 text-center text-gray-500">
+        <p>&copy; 2025 Hitesh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
